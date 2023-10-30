@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+span{ color:blueviolet; }
+
+#banner{   
+display: flex; /* Agrega los dos puntos para establecer la propiedad display */
+width: 3000px; /* Cambia este valor al ancho deseado en píxeles */
+height: 255px; /* Cambia este valor a la altura deseada en píxeles */
+margin: 0;
+padding: 25px 30px;
+background-image: url("media/insti.png"); /* Corrige la propiedad background-image */
+}
+
+#header .container{
+    display: flex;
+    text-align: center;
+    height: 70vh;
+    padding: 50px;
+}
+
+.img-container{
+    background-image: url("media/carreras.webp");
+    background-size: cover;
+    background-position: center center;
+    width: 1500px;
+    height: 750px;
+}
+
+
+#nuestras-carreras{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestras-carreras .programas{
+    display: flex;
+    justify-content: center;
+}
+
+#nuestras-carreras .container{
+    padding: 150px 12px;
+}
+
+#nuestras-carreras h2{
+    font-size: 3.5em;
+    text-decoration: aqua;
+
+}
+
+#nuestras-carreras p{
+    display: block;
+    margin-bottom: 30px;
+}
+
+#nuestras-carreras .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+    background-color: aquamarine;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(98, 195, 132, 0.5)
+    )
+    ,url("media/logosistemas.jpg");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(166, 70, 57, 0.5)
+    )
+    ,url("media/logologistica.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(92, 202, 212, 0.5)
+    )
+    ,url("media/logoambiental.jpg");
+}
+
+
+
+.carta:nth-child(4){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/logoturismo.jpg");
+}
+
+.carta:nth-child(5){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/logotextil.jpg");
+
+
+}
+
+.carta:nth-child(6){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/logoterapeutico.jpg");
+
+}
+
+.carta:nth-child(7){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/logoterapeutico.jpg");
+
+}
+
+
+
+
+
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#final{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: right;
+    text-align: right;
+    background-color: rgb(66, 177, 224);
+    color: rgb(32, 25, 129);
+    height: 15vh;
+}
+
+#final h2{
+    font-size: 2vw;
+}
+
+
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    
+
+    #header .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #header .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #header h2{
+        margin-top: 0px;
+    }
+
+
+ 
+
+
+
+
+
+
+
+
+
+    #caracteristicas{
+        background-image: url("media/azul.png");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #final h2{
+        font-size: 1.5em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
+}
